@@ -1,0 +1,26 @@
+clc;
+clear all;
+close all;
+t = -2:0.01:2;
+x1 = cos(2*pi*0.5*t);
+x2 = cos(2*pi*0.5*t);
+x3 = x1 + x2;
+subplot(3,1,1);
+plot(t, x1, 'linewidth', 3);
+grid;
+ylabel('Amplitude');
+xlabel('Time');
+title('COS WAVE, AMPLITUDE = 1, FREQ = 0.5 HZ, Phase = 0 RADIAN');
+subplot(3,1,2);
+plot(t, x2, 'linewidth', 3);
+grid;
+ylabel('Amplitude');
+xlabel('Time');
+title('COS WAVE, AMPLITUDE = 1, FREQ = 0.5 HZ, Phase = 0 RADIAN');
+subplot(3,1,3);
+plot(t, x3, 'linewidth', 3);
+grid;
+ylabel('Amplitude');
+xlabel('Time');
+title('SUM OF THE ABOVE TWO COSINE SIGNALS');
+
